@@ -1,0 +1,10 @@
+import streamlit as st
+
+st.title("Triangle Area Calculator")
+
+base = st.number_input("Enter the base of the triangle:", min_value=0.0)
+height = st.number_input("Enter the height of the triangle:", min_value=0.0)
+
+if base > 0 and height > 0:
+    area = 0.5 * base * height
+    st.write(f"The area of the triangle is {area} square units.")
